@@ -23,7 +23,7 @@ namespace Advanced_Text_Adventure
         public void BuyItem(Player from)
         {
             Console.WriteLine(this.name, "bought", from.CurrentItem, "!!");
-            Player.player.CurrentItem = null;
+            Player.player.CurrentItem = default;
 
 
         }

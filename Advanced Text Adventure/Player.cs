@@ -14,7 +14,7 @@ namespace Advanced_Text_Adventure
         public object CurrentItem;
 
 
-        public Player ( object currentItem, string name, int age, string gender): base(name, age, gender)
+        public Player (Item currentItem, string name, int age, string gender): base(name, age, gender)
         {
             this.CurrentItem = currentItem;
         }
@@ -22,7 +22,13 @@ namespace Advanced_Text_Adventure
 
         public void BuyFromShop()
         {
-            //player buys items from shop.
+            //player buys items from shop. 
+        }
+
+
+        public void Inventory()
+        {
+
         }
 
 

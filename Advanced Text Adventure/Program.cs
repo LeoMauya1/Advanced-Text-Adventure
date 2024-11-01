@@ -12,7 +12,7 @@ namespace Advanced_Text_Adventure
 
         static void Main(string[] args)
         {
-
+            Console.WriteLine(Player.player.Cur;
             
             
 
