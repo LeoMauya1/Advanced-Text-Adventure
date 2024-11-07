@@ -6,17 +6,30 @@ using System.Threading.Tasks;
 
 namespace Advanced_Text_Adventure
 {
-     class Inventory
+     class Inventory 
     {
-        public List<Item> Items;
-        
+       public List<Item> Items;
 
-        public Inventory(List<Item> items)
+
+
+
+
+     public Inventory(List<Item> Items)
         {
-            
+            this.Items = Items;
         }
+     
 
 
-    
+      
+      
+
     }
+
+      
+
+
+
+
+   
 }

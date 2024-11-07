@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Advanced_Text_Adventure
 {
-    class Player : Character
+    public class Player : Character
     {
 
 
@@ -14,7 +14,7 @@ namespace Advanced_Text_Adventure
         public object CurrentItem;
 
 
-        public Player (Item currentItem, string name, int age, string gender): base(name, age, gender)
+        public Player (Item currentItem, string name, int age, string gender ): base(name, age, gender)
         {
             this.CurrentItem = currentItem;
         }
@@ -26,10 +26,12 @@ namespace Advanced_Text_Adventure
         }
 
 
-        public void Inventory()
+       public void MoveItemToCurrent(List<Item>items, Player player)
         {
-
+            player.CurrentItem = items[0];
+            Console.WriteLine($"YOUR CURRENT ITEM IS A {items[0].itemName}, IT SELLS FOR {items[0].sellPrice}");
         }
+        
 
 
 
